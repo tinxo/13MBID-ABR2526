@@ -50,14 +50,14 @@ def test_basico(datos_banco):
     assert df.shape[1] == 21, f"El DataFrame debería tener 21 columnas, pero tiene {df.shape[1]}."
 
 
-if __name__ == "__main__":
-    try:
-        test_esquema(datos_banco())
-        test_basico(datos_banco())
-        print("Todos los tests pasaron exitosamente.")
-        with open("docs/test_results/test_results.txt", "w") as f:
-            f.write("Todos los tests pasaron exitosamente.\n")
-    except AssertionError as e:
-        print(f"Test fallido: {e}")
-        with open("docs/test_results/test_results.txt", "w") as f:
-            f.write(f"Test fallido: {e}\n")
+# if __name__ == "__main__":
+#     try:
+#         test_esquema(datos_banco())
+#         test_basico(datos_banco())
+#         print("Todos los tests pasaron exitosamente.")
+#         with open("docs/test_results/test_results.txt", "w") as f:
+#             f.write("Todos los tests pasaron exitosamente.\n")
+#     except AssertionError as e:
+#         print(f"Test fallido: {e}")
+#         with open("docs/test_results/test_results.txt", "w") as f:
+#             f.write(f"Test fallido: {e}\n")

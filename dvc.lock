@@ -12,3 +12,18 @@ stages:
       hash: md5
       md5: 6ce5f8a6f1e36e720a2ab920a39134d9
       size: 20786
+    - path: docs/figures/distribucion_target.png
+      hash: md5
+      md5: 50b8b540b2ef95ff35827775b5dc84b9
+      size: 25794
+  test_data_quality:
+    cmd: pytest test/test_data_quality.py
+    deps:
+    - path: data/raw/bank-additional-full.csv
+      hash: md5
+      md5: f6cb2c1256ffe2836b36df321f46e92c
+      size: 5834924
+    - path: test/test_data_quality.py
+      hash: md5
+      md5: 9f2949b8a87124e9714d2a160861b4b1
+      size: 2136
