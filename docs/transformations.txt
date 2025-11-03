@@ -3,5 +3,5 @@ Transformaciones realizadas:
 - Se eliminaron las filas con valores nulos
 - Se eliminaron las filas duplicadas
 - Se eliminó la columna 'default' debido a la alta cantidad de valores desconocidos
-- Cantidad de filas finales: 38232
+- Cantidad de filas finales: 38154
 - Cantidad de columnas finales: 20
