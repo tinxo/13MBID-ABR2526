@@ -3798,6 +3798,7 @@ dependencies = [
     { name = "scikit-learn" },
     { name = "streamlit" },
     { name = "streamlit-ace" },
+    { name = "uvicorn" },
     { name = "ydata-profiling" },
 ]
 
@@ -3818,6 +3819,7 @@ requires-dist = [
     { name = "scikit-learn", specifier = ">=1.6.1" },
     { name = "streamlit", specifier = ">=1.43.0" },
     { name = "streamlit-ace", specifier = ">=0.1.1" },
+    { name = "uvicorn", specifier = ">=0.38.0" },
     { name = "ydata-profiling", specifier = ">=4.13.0" },
 ]
 
