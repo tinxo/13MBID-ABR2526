@@ -6,8 +6,8 @@ from typing import Dict
 
 app = FastAPI(
     title="Modelo de Clasificación de Clientes Bancarios",
-    description="API para predecir si un cliente bancario suscribirá un depósito a plazo fijo.",
-    version="1.0.0",
+    description="API para predecir si un cliente bancario va a realizar un depósito a plazo fijo.",
+    version="1.0.1",
 )
 
 class PredictionRequest(BaseModel):
@@ -83,8 +83,8 @@ except Exception as e:
 @app.get("/")
 def root():
     return {
-        "message": "API del modelo de clasificación de clientes bancarios está en funcionamiento.",
-        "version": "1.0.0",
+        "message": "API del modelo de predicción para clientes bancarios.",
+        "version": "1.0.1",
         "endpoints": {
             "predict": "/predict",
             "health": "/health",
