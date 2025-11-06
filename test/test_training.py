@@ -5,7 +5,7 @@ import pytest
 
 def test_training_metrics_regression(tmp_path):
     project_root = Path(__file__).resolve().parents[1]
-    baseline_path = project_root / "metrics" / "train_metrics.json"
+    baseline_path = project_root / "metrics" / "metrics.json"
     if not baseline_path.exists():
         pytest.skip(f"No se encontró la baseline en {baseline_path}. Ejecuta el entrenamiento para generarla.")
 
@@ -17,7 +17,7 @@ def test_training_metrics_regression(tmp_path):
     data_path = project_root / "data" / "processed" / "bank-processed.csv"
     model_out = tmp_path / "model.pkl"
     prep_out = tmp_path / "preprocessor.pkl"
-    metrics_out = tmp_path / "train_metrics.json"
+    metrics_out = tmp_path / "metrics.json"
 
     _, _, metrics = train_model(
         data_path=str(data_path),
